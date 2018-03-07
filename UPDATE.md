@@ -1,23 +1,28 @@
-## 更新记录
-**2016-08-12** Version：v3.1.0
+## update record
+** 2016-08-12 ** Version: v3.1.0
 
-1. 单手模式，左滑右滑可以切换
-2. UI调整，新增字体图标（阿里妈妈字体库）
-3. 去掉新闻阅读
-4. 新增主题切换，增加黑夜拟物主题
+1. Single-handed mode, left slide right slide to switch
+2. UI adjustment, add font icon (Ali mother font library)
+3. Remove the news reading
+4 new theme switch, increase the subject matter of the night to be proposed
 
-**2016-08-01** Version：v2.2.0
+** 2016-08-01 ** Version: v2.2.0
 
-1. 新增检查新版本功能
-2. 新增新闻阅读功能
+1. New check the new version features
+2. New news reading function
 
-**2016-07-27** Version：v2.1.0
+** 2016-07-27 ** Version: v2.1.0
 
-1. 解决小数点可以输入很多的问题
-2. 解决从历史记录中拿到表达式按等于号后普通计算不正确
-3. 点击头部去掉最小化换成tap事件
+1. To solve the decimal point can enter a lot of questions
+2. Resolve to get from the history of the expression is equal to the ordinary calculation is not correct
+3. Click on the head to remove the tap event to minimize
 
-**2016-07-26** Version：v2.0.0
+** 2016-07-26 ** Version: v2.0.0
 
-1. 修改样式，视觉效果更上一层楼
-2. 文字大小适配移动端，使用rem单位
+1. Modify the style, visual effects a higher level
+2. Text size adapter mobile terminal, using the rem unit
+
+** 2018-03-07 ** version v3.0.0
+
+1. Upgraded to PWA
+2. Started adding English to the application documentation

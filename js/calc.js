@@ -500,57 +500,22 @@ function positionFun(postion){
 }
 
 
-//function swiperHistory(){
-//  /**
-//   * 1.历史记录向下滑动
-//   * 2.滑动到一定距离隐藏历史记录
-//   * 3.滑动少于某个距离吸附回去
-//   */
-//  var historyBox = document.getElementById("historyBox");
-//  var startY = 0,
-//      moveY = 0,
-//      distanceY = 0,
-//      isMove = false;
-//  //缓冲的距离
-//  var distance = 100;
-//  //加过渡
-//  var addTransition = function(){
-//      historyBox.style.webkitTransition = 'all 0.3s';/*兼容性*/
-//      historyBox.style.transition = 'all 0.3s';
-//  }
-//  //清除过渡
-//  var removeTransition = function(){
-//      historyBox.style.webkitTransition = 'none';
-//      historyBox.style.transition = 'none';
-//  };
-//  //定位
-//  var setTranslateY = function(translateY){
-//      historyBox.style.webkitTransform = 'translateY('+translateY+')';
-//      historyBox.style.transform = 'translateY('+translateY+')';
-//  }
-//
-//  //滑动事件
-//  historyBox.addEventListener("touchstart",function(e){
-//      startY = e.touches[0].clientY;
-//  });
-//  historyBox.addEventListener("touchmove",function(e){
-//      moveY = e.touches[0].clientY;
-//      distanceY = moveY - startY;
-//      removeTransition();
-//      setTranslateY(distanceY+"px");
-//      isMove = true;
-//  });
-//  historyBox.addEventListener("touchend",function(e){
-//      if(distanceY > distance){
-//          addTransition();
-//          setTranslateY("102%");
-//      }else{
-//          addTransition();
-//          historyBox.style.webkitTransform = 'none';
-//          historyBox.style.transform = 'none';
-//      }
-//      startY = moveY = distanceY = 0;
-//      isMove = false;
-//  });
-//
-//}
+
+/* register the service worker */
+
+if ('serviceWorker' in navigator) {
+
+	navigator.serviceWorker.register('/sw.js').then(function (registration) {
+		// Registration was successful
+		
+		console.log('ServiceWorker registration successful with scope: ', registration.scope);
+	
+	}).catch(function (err) {
+		// registration failed :(
+			
+		console.log('ServiceWorker registration failed: ', err);
+	
+	});
+	
+}
+
